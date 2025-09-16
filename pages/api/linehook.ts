@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   const data = req.body
-  console.log('✅ 收到資料：', data)
+  console.log('📝 收到資料：', data)
 
   res.status(200).json({ message: '我收到資料了！' })
 }
